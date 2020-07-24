@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 
 class Cliente(models.Model):
     nome = models.CharField(max_length=100)
@@ -8,7 +7,6 @@ class Cliente(models.Model):
     rg = models.CharField(max_length=9)
     celular = models.CharField(max_length=14)
     ativo = models.BooleanField(default=False)
-    data_cadastro = models.DateTimeField(default=datetime.now, editable=False)
 
     def __str__(self):
         return self.nome

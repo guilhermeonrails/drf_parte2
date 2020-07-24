@@ -6,3 +6,4 @@ class ClientesViewSet(viewsets.ModelViewSet):
     """Listando todos os clientes"""
     queryset = Cliente.objects.all()
     serializer_class = ClienteSerializer
+
