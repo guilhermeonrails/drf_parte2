@@ -6,7 +6,7 @@ class Cliente(models.Model):
     cpf = models.CharField(max_length=11, unique=True)
     rg = models.CharField(max_length=9)
     celular = models.CharField(max_length=14)
-    ativo = models.BooleanField(default=False)
+    ativo = models.BooleanField()
 
     def __str__(self):
         return self.nome

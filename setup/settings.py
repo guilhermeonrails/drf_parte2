@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'clientes',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -126,4 +127,4 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 25
 }
 
-# DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
