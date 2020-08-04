@@ -9,8 +9,8 @@ class ClientesViewSet(viewsets.ModelViewSet):
     queryset = Cliente.objects.all()
     serializer_class = ClienteSerializer
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
-    filterset_fields = ['nome', 'email', 'cpf', 'rg', 'ativo']
-    search_fields = ['nome', 'cpf']
+    filterset_fields = ['ativo']
+    search_fields = ['nome','email', 'cpf']
     ordering_fields = ['nome']
 
 class BuscaClientePorCPF(generics.ListAPIView):
